@@ -1,33 +1,25 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<title>UI assignment</title>
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script type="text/javascript" src = "script.js"></script>
 </head>
 <body>
-	<div class = "container">
-		<div class = 'wrapper' id = "products" >
-								
-		</div>
-	</div>
-	
-<div id="myModal" class="modal">
+	<div class = "wrapper" id = "products">
+		
+    </div>
+	<div id="myModal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="" id = "modalimg">
-    <div class = "adding-button flex-item" id = "gh"><button>Submit</button></div>
-  </div>
-
-</div>
-
+    <div id = 'preview' class ='wrapper'></div>
+    	<input type="text" id = "imageUrl" name="url">
+    	<button onclick = "uploadImage()">Submit</button>
+    <div><p><em>Price:</em><span id = "price"></span></p></div>
+    </div>
+    <script type="text/javascript" src = "script.js"></script>
 </body>
 </html>
